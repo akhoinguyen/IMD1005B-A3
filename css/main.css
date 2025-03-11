@@ -19,6 +19,7 @@
 
 body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1,
@@ -432,7 +433,6 @@ nav {
     top: 0;
     width: 100%;
     z-index: 10000;
-    background-color: var(--primary);
     padding: 0 20px;
 }
 
@@ -457,16 +457,13 @@ nav {
     width: 100%;
 }
 
-.nav-container li:hover {
-    background-color: var(--secondary);
-}
-
 nav p,
 nav a {
     display: inline-block;
     width: 100%;
     color: var(--white);
     text-decoration: none;
+    font-weight: 600;
 }
 
 nav a {
@@ -479,22 +476,17 @@ nav a:hover {
 
 nav .tagline {
     font-size: 1.25rem;
-    font-family: "Orbitron", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     padding: 20px;
     margin-bottom: 0;
 }
 
-.nav-current {
-    background-color: var(--secondary);
-}
-
 .nav-current a {
-    color: var(--black);
+    border-bottom: 8px solid var(--white);
 }
 
-.nav-current:hover, .nav-current a:hover {
-    pointer-events: none;
+.nav-current a:hover {
+    border-bottom-color: var(--black);
 }
 
 
@@ -503,8 +495,6 @@ nav .tagline {
     min-height: 100vh !important;
 
 }
-
-
 
 .hero-banner {
     background-size: cover;
@@ -534,17 +524,6 @@ nav .tagline {
 
 .hero-banner-parallax {
     background-attachment: fixed;
-}
-
-
-
-/* ---------- MAIN CONTENT STYLES ---------- */
-
-.home-section-2 {
-    background-image: url("../images/stars-1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 

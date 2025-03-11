@@ -1,0 +1,31 @@
+@keyframes move-up {
+    from {transform: translateY(0);}
+    to {transform: translateY(-100vh);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.hero-circle {
+    position: absolute;
+    left: calc(100% - 200px);
+    bottom: 0;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.hero-squigg {
+    position: absolute;
+    bottom: 0;
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
