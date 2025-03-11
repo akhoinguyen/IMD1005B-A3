@@ -10,20 +10,23 @@
 
 svg {
     position: absolute;
+    bottom: 0;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 
+.star-wrapper {
+    bottom: 100px;
+}
+
 .hero-circle {
     left: calc(100% - 200px);
-    bottom: 0;
     animation-name: spin;
     animation-duration: 2s;
 }
 
 .hero-squigg {
-    bottom: 0;
     animation-name: move-up;
     animation-duration: 2s;
     animation-direction: alternate;
