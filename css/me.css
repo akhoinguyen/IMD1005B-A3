@@ -40,6 +40,10 @@ main {
     /* Full viewport height */
 }
 
+.content {
+    margin-top: 50vh;
+}
+
 .me-head {
     position: absolute;
     width: 200px;
@@ -48,4 +52,8 @@ main {
     moveX 2s linear infinite alternate,
     moveY 3.14159s linear infinite alternate,
     spin 5s linear infinite forwards;
+}
+
+.me-head:hover {
+    animation-play-state: paused;
 }
