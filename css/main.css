@@ -547,7 +547,6 @@ nav .tagline {
 }
 
 .hero-banner-content {
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -651,7 +650,6 @@ nav .tagline {
 
     .hero-banner {
         height: 20vh;
-        padding: 40px;
     }
 
     .hero-banner-home {

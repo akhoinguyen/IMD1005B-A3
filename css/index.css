@@ -8,12 +8,21 @@
     to {transform: rotate(360deg);}
 }
 
+@keyframes move-around-viewport {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(0, calc(-100vh + 173.2px)) rotate(180deg);}
+    50% {transform: translate(calc(100vw - 200px), calc(-100vh + 173.2px)) rotate(360deg);}
+    75% {transform: translate(calc(100vw - 200px), 0) rotate(540deg);}
+    100% {transform: translate(0, 0) rotate(720deg);}
+}
+
 svg {
     position: absolute;
     bottom: 0;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+}
+
+svg, .section-2 {
+    animation: linear forwards infinite;
 }
 
 .star-wrapper {
@@ -28,13 +37,25 @@ svg {
 
 .hero-squigg {
     animation-name: move-up;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-direction: alternate;
 }
 
+.hero-triangle {
+    animation-name: move-around-viewport;
+    animation-duration: 5s;
+}
+
+.section-2:hover {
+    background-color: var(--black);
+}
+
+.section-2:hover .section-2-content {
+    color: var(--red);
+}
 .star {
-    animation-name: spin;
-    animation-duration: 8s;
     left: calc(50vw + 200px);
     top: 125%;
+    animation-name: spin;
+    animation-duration: 6s;
 }
