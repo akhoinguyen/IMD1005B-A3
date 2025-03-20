@@ -29,8 +29,17 @@
 }
 
 body {
-    background-color: var(--green);
-    margin: 0;
+    --s: 15vw;
+    /* control the size*/
+    --c1: var(--green);
+    --c2: #008a67;
+    --c3: #004f49;
+
+    background: 
+    repeating-conic-gradient(#0000 0 25%,var(--c1) 0 50%)
+    0 0/calc(2*var(--s)) var(--s),
+    linear-gradient(-45deg,var(--c2) 33.3%,var(--c3) 0)
+    0 0/var(--s) calc(var(--s)/2)
 }
 
 main {
@@ -49,9 +58,9 @@ main {
     width: 200px;
     aspect-ratio: 1 / 1;
     animation:
-    moveX 2s linear infinite alternate,
-    moveY 3.14159s linear infinite alternate,
-    spin 5s linear infinite forwards;
+        moveX 2s linear infinite alternate,
+        moveY 3.14159s linear infinite alternate,
+        spin 5s linear infinite forwards;
 }
 
 .me-head:hover {
