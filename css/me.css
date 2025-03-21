@@ -17,11 +17,11 @@
 }
 
 .section-1 {
-    --s: 15vw;
+    --s: 20vw;
     /* control the size*/
-    --c1: var(--green);
-    --c2: #00a37a;
-    --c3: #005750;
+    --c1: var(--musty-green);
+    --c2: var(--blue);
+    --c3: var(--black);
 
     background: 
     repeating-conic-gradient(#0000 0 25%,var(--c1) 0 50%)

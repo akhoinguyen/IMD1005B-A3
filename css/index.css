@@ -99,7 +99,7 @@ svg {
 .section-4 {
         --s: 6vw; /* control the size*/
         --c1: var(--black);
-        --c2: #002e28;
+        --c2: var(--musty-green);
         --c3: #2e0092;
         
         --_g: conic-gradient(at 50% 25%,#0000 75%,var(--c1) 0);
