@@ -75,7 +75,7 @@ svg {
     animation-duration: 1s;
 }
 
-.section-3 {
+.hero-banner-home {
   --s: 4vw; /* control the size*/
   --c1: var(--blue);
   --c2: var(--purple);

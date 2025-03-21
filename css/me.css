@@ -1,55 +1,43 @@
 @keyframes moveX {
-    0% {
-        left: -25px;
-    }
+    0% {left: -25px;}
 
-    100% {
-        left: calc(100% - 175px);
-    }
+    100% {left: calc(100% - 175px);}
 }
 
 @keyframes moveY {
-    0% {
-        top: 0;
-    }
+    0% {top: 0;}
 
-    100% {
-        top: calc(100% - 200px);
-    }
+    100% {top: calc(100% - 200px);}
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
+    from {transform: rotate(0deg);}
 
-    to {
-        transform: rotate(360deg);
-    }
+    to {transform: rotate(360deg);}
 }
 
-body {
+.section-1 {
     --s: 15vw;
     /* control the size*/
     --c1: var(--green);
-    --c2: #008a67;
-    --c3: #004f49;
+    --c2: #00a37a;
+    --c3: #005750;
 
     background: 
     repeating-conic-gradient(#0000 0 25%,var(--c1) 0 50%)
     0 0/calc(2*var(--s)) var(--s),
     linear-gradient(-45deg,var(--c2) 33.3%,var(--c3) 0)
-    0 0/var(--s) calc(var(--s)/2)
-}
+    0 0/var(--s) calc(var(--s)/2);
 
-main {
+    background-attachment: fixed;
+
     width: 100vw;
     /* Full viewport width */
     height: 100vh;
     /* Full viewport height */
 }
 
-.content {
+.section-1 .content {
     margin-top: 50vh;
 }
 
@@ -63,6 +51,6 @@ main {
         spin 5s linear infinite forwards;
 }
 
-.me-head:hover {
+/* .me-head:hover {
     animation-play-state: paused;
-}
+} */
