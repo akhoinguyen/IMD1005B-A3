@@ -95,3 +95,18 @@ svg {
     var(--g5) calc(3*var(--s)) 0,var(--g5) 0 var(--_p) var(--c3);
   background-size: calc(6*var(--s)) calc(2*var(--_p));
 }
+
+.section-4 {
+        --s: 6vw; /* control the size*/
+        --c1: var(--black);
+        --c2: #002e28;
+        --c3: #2e0092;
+        
+        --_g: conic-gradient(at 50% 25%,#0000 75%,var(--c1) 0);
+        background:
+          var(--_g),var(--_g) var(--s) var(--s),
+          var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+          var(--_g) calc(3*var(--s)) calc(3*var(--s)),
+          repeating-linear-gradient(135deg,var(--c2) 0 12.5%,var(--c3) 0 25%);
+        background-size: calc(4*var(--s)) calc(4*var(--s));
+      }
