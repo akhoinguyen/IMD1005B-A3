@@ -1,30 +1,3 @@
-@keyframes move-up {
-    from {transform: translateY(0);}
-    to {transform: translateY(-100vh);}
-}
-
-@keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-
-@keyframes move-around-viewport {
-    0% {transform: translate(0, 0);}
-    25% {transform: translate(0, calc(-100vh + 173.2px)) rotate(180deg);}
-    50% {transform: translate(calc(100vw - 200px), calc(-100vh + 173.2px)) rotate(360deg);}
-    75% {transform: translate(calc(100vw - 200px), 0) rotate(540deg);}
-    100% {transform: translate(0, 0) rotate(720deg);}
-}
-
-@keyframes rainbow-loop {
-    0%, 100% {color: var(--red);}
-    16% {color: var(--orange);}
-    32% {color: var(--yellow);}
-    48% {color: var(--green);}
-    64% {color: var(--blue);}
-    80% {color: var(--purple);}
-}
-
 svg {
     position: absolute;
     bottom: 0;
@@ -45,7 +18,7 @@ svg {
 }
 
 .hero-squigg {
-    animation-name: move-up;
+    animation-name: move-updown;
     animation-duration: 1.5s;
     animation-direction: alternate;
 }

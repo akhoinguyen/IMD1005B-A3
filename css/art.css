@@ -3,6 +3,27 @@ body {
     height: 100vh;
 }
 
+svg {
+    position: absolute;
+    z-index: -10;
+}
+
+.hero-squigg {
+    top: -100px;
+    right: calc(50vw - 720px);
+
+    animation-name: move-leftright;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+.hero-circle {
+    top: 150px;
+    left: 100px;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
 .hero-banner-content {
 margin-top: 20vh;
 }
@@ -10,4 +31,5 @@ margin-top: 20vh;
 iframe {
     width: 100%;
     aspect-ratio: 3 / 2;
+    border: 20px solid var(--red);
 }
