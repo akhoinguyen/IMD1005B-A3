@@ -47,6 +47,10 @@ iframe {
     padding: 20px;
 }
 
+.wow-btn:hover {
+    background-color: var(--green);
+}
+
 .wow-clicked {
     --s: 20vw;
     /* control the size*/
