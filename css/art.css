@@ -31,7 +31,7 @@ svg {
 
 iframe {
     width: 100%;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 16 / 9;
     border: 20px solid var(--green);
 }
 
