@@ -375,15 +375,9 @@ picture img {
     left: 0;
     width: 100%;
     height: 100%;
-    max-height: calc(100% - 346px);
-    /* Compensate for nav height 326px */
-    /* max-width: 400px; */
+    max-height: calc(100% - 200px);
     padding: 20px;
-}
-
-.lightbox img {
     object-fit: contain;
-
 }
 
 .lightbox-overlay {
@@ -400,15 +394,17 @@ picture img {
     position: fixed;
     background-color: initial !important;
     z-index: 2000;
-    top: 346px;
-    /* to compensate mobile nav height 326px */
-    right: 0;
+    top: 150px; /* to compensate mobile nav height 326px */
+    right: 20px;
     background-color: inherit;
     padding: 20px;
 }
 
-.lightbox-overlay,
-#lightbox-btn {
+#lightbox-btn svg {
+    position: static;
+}
+
+.lightbox-overlay, #lightbox-btn {
     display: none;
 }
 
@@ -475,8 +471,6 @@ nav .tagline {
 .nav-current a:hover {
     border-bottom-color: var(--black);
 }
-
-
 
 
 
@@ -559,14 +553,6 @@ nav .tagline {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .lightbox {
-        max-height: calc(100% - 90px);
-        /* Compensate for nav height 70px */
-    }
-
-    #lightbox-btn {
-        top: 90px;
-    }
 
 
 
@@ -601,6 +587,12 @@ nav .tagline {
 
     .hero-banner-home .hero-banner-content {
         margin-top: calc(50vh -335px);
+    }
+
+
+    
+    #lightbox-btn p {
+        font-size: 0.75rem;
     }
 
 }
