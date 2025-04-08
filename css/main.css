@@ -64,6 +64,10 @@ h5 {font-size: 1.953rem;}
 
 h6 {font-size: 1.563rem;}
 
+button {
+    cursor: pointer;
+}
+
 button a {
     display: inline-block;
     text-decoration: none;
@@ -375,14 +379,14 @@ picture img {
     left: 0;
     width: 100%;
     height: 100%;
-    max-height: calc(100% - 200px);
+    max-height: 100%;
     padding: 20px;
     object-fit: contain;
 }
 
 .lightbox-overlay {
     position: fixed;
-    z-index: 1000;
+    z-index: 1100;
     top: 0;
     left: 0;
     width: 100%;
@@ -394,7 +398,7 @@ picture img {
     position: fixed;
     background-color: initial !important;
     z-index: 2000;
-    top: 150px; /* to compensate mobile nav height 326px */
+    top: 20px;
     right: 20px;
     background-color: inherit;
     padding: 20px;
@@ -408,6 +412,13 @@ picture img {
     display: none;
 }
 
+.gallery-item:hover {
+    cursor: pointer;
+}
+
+.gallery-item.lightbox {
+    cursor: default;
+}
 
 
 /* ---------- HEADER STYLES ---------- */
@@ -416,7 +427,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: 1000;
     padding: 0 20px;
 }
 
@@ -454,7 +465,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--black);
+    color: var(--red);
 }
 
 nav .tagline {
@@ -469,7 +480,7 @@ nav .tagline {
 }
 
 .nav-current a:hover {
-    border-bottom-color: var(--black);
+    border-bottom-color: var(--red);
 }
 
 
@@ -590,7 +601,7 @@ nav .tagline {
     }
 
 
-    
+
     #lightbox-btn p {
         font-size: 0.75rem;
     }
